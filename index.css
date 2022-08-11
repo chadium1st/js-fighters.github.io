@@ -1,0 +1,129 @@
+    /* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap'); */
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+.mainContainer{
+    position: relative;
+    display: inline-block;
+}
+
+.container{
+    padding: 20px;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+/* player bar */
+.playerBarContainer{
+    border-top: 4px solid rgb(224, 195, 113);
+    border-left: 4px solid rgb(224, 195, 113);
+    border-bottom: 4px solid rgb(224, 195, 113);
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.playerBar{
+    background-color: #881337;
+    height: 30px;
+    width: 100%;
+}
+
+.behindPlayerHealth{
+    position: absolute; 
+    background-color: #1E293B;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+
+/* the timer */
+.timer{
+    background-color: rgb(27, 27, 27);
+    height: 50px;
+    width: 100px;
+    flex-shrink: 0;
+    color: white;
+    font-size: 150%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Press Start 2P', cursive;
+    border: 4px solid rgb(224, 195, 113);
+}
+
+/* enemy bar */
+.enemyBarContainer{
+    border-top: 4px solid rgb(224, 195, 113);
+    border-right: 4px solid rgb(224, 195, 113);
+    border-bottom: 4px solid rgb(224, 195, 113);
+    position: relative;
+    width: 100%;
+}
+
+.enemyBar{
+    background-color: #881337;
+    height: 30px;
+}
+
+.behindEnemyHealth{
+    position: absolute; 
+    background-color: #1E293B;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.gameState{
+    color: white;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    font-family: 'Press Start 2P', cursive;
+    font-weight: bolder;
+    visibility: hidden;
+    font-size: 200%;
+}
+
+.buttonContainer{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    font-weight: bolder;
+}
+
+.restartButton{   
+    height: 576px;
+    width: 1024px;
+    border: 8px solid #881337;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 150%;
+    color: white;
+    background-color: #1E293B;
+    visibility: hidden;
+    border-radius: 15px;
+    outline: none;
+}
+
+.restartButton:hover{
+    border: 8px solid rgb(224, 195, 113);
+    cursor: pointer;
+}
